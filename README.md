@@ -6,6 +6,7 @@
 | Atividade 3 | Aprendendo a sintexe Java |
 |--|--|
 | Módulo | Dominando a linguagem de programação Java |
+| Com | Gleyson Sampaio |
 | Bootcamp | Santander Bootcamp 2023 - Fullstack Java+Angular |
 | Plataforma | DIO |
 
