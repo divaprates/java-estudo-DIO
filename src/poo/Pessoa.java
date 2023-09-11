@@ -2,6 +2,7 @@ package poo;
 
 public abstract class Pessoa {
     private String nome;
+    private String telefone;
 
     public abstract void ligar();
 
