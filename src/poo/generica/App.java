@@ -1,4 +1,4 @@
-package poo.Generica;
+package poo.generica;
 
 public class App {
     public static void main(String args[]) {

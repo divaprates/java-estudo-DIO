@@ -1,4 +1,4 @@
-package poo.Generica;
+package poo.generica;
 
 public class Caixa<T> {
     private T item;

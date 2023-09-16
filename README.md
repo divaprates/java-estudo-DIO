@@ -13,6 +13,8 @@
 Estudo de Java.
 
 - Generics
+- Collections
+  - list
 
 <br>
 
