@@ -15,18 +15,22 @@ public class ListaTarefa {
         this.criarTarefa(tarefa);
     }
 
-    public void criarTarefa(Tarefa tarefa) {
+    protected void criarTarefa(Tarefa tarefa) {
         this.tarefas.add(tarefa);
     }
 
     public void removerTarefa(String descricao) {
-        List<Tarefa> tarefasRemover = new ArrayList<>(null);
-        for (Tarefa tarefa : this.tarefas) {
-            if(tarefa.getDescricao().equalsIgnoreCase(descricao)) {
-                tarefasRemover.add(tarefa);
+        List<Tarefa> tarefasRemover = new ArrayList<>();
+        if(!this.tarefas.isEmpty()){
+            for (Tarefa t : this.tarefas) {
+                if(t.getDescricao().equalsIgnoreCase(descricao)) {
+                    tarefasRemover.add(t);
+                }
             }
+            this.tarefas.removeAll(tarefasRemover);
+        }else {
+            System.out.println("A lista está vazia");
         }
-        this.tarefas.removeAll(tarefasRemover);
     }
 
     public int obterNumeroTotal() {

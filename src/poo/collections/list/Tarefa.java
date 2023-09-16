@@ -1,4 +1,4 @@
-package poo.collections;
+package poo.collections.list;
 
 public class Tarefa {
 
@@ -14,6 +14,11 @@ public class Tarefa {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    @Override
+    public String toString() {
+        return descricao;
     }
     
 }
