@@ -1,17 +1,18 @@
 # java-estudo-DIO
-### Aprendendo a Sintexe Java - DIO
+###
 - Estudo
 ##
 
-| Atividade 3 | Aprendendo a sintexe Java |
+| Java | Estudos |
 |--|--|
 | Módulo | Dominando a linguagem de programação Java |
-| Com | Gleyson Sampaio |
 | Bootcamp | Santander Bootcamp 2023 - Fullstack Java+Angular |
 | Plataforma | DIO |
 
 <br>
 Estudo de Java.
+
+- Generics
 
 <br>
 
