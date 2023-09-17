@@ -1,4 +1,4 @@
-package poo.collections.list;
+package poo.collections.list.model;
 
 public class Tarefa {
 

@@ -3,6 +3,8 @@ package poo.collections.list;
 import java.util.ArrayList;
 import java.util.List;
 
+import poo.collections.list.model.Item;
+
 public class CarrinhoDeCompras {
     private List<Item> itens;
 

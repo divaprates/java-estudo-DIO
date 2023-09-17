@@ -12,9 +12,11 @@
 <br>
 Estudo de Java.
 
+- Abstract
 - Generics
+- Interfaces
 - Collections
-  - list
+  - List
 
 <br>
 

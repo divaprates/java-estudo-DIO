@@ -2,6 +2,7 @@ package poo.collections;
 
 import poo.collections.list.CarrinhoDeCompras;
 import poo.collections.list.ListaTarefa;
+import poo.collections.list.SomaNumeros;
 
 public class App {
     public static void main(String args[]) {
@@ -25,5 +26,19 @@ public class App {
         carrinho.exibirItens();
         carrinho.removerItem("maçã");
         carrinho.exibirItens();
+
+        //  Soma números
+        System.out.println("\nSoma Números");
+
+        SomaNumeros numeros = new SomaNumeros();
+        numeros.adicionarNumero(12);
+        numeros.adicionarNumero(38);
+        numeros.adicionarNumero(64);
+        numeros.adicionarNumero(89);
+
+        System.out.println("Total: " + numeros.calcularSoma());
+        System.out.println("Maior número: " + numeros.encontrarMaiorNumero());
+        System.out.println("Maior número: " + numeros.encontrarMenorNumero());
+        System.out.println("Maior número: " + numeros.exibirNumeros());
     }
 }

@@ -3,6 +3,8 @@ package poo.collections.list;
 import java.util.ArrayList;
 import java.util.List;
 
+import poo.collections.list.model.Tarefa;
+
 public class ListaTarefa {
     private List<Tarefa> tarefas;
 
