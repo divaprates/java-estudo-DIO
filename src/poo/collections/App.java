@@ -2,6 +2,7 @@ package poo.collections;
 
 import poo.collections.list.CarrinhoDeCompras;
 import poo.collections.list.ListaTarefa;
+import poo.collections.list.OrdenacaoPessoa;
 import poo.collections.list.SomaNumeros;
 
 public class App {
@@ -40,5 +41,20 @@ public class App {
         System.out.println("Maior número: " + numeros.encontrarMaiorNumero());
         System.out.println("Maior número: " + numeros.encontrarMenorNumero());
         System.out.println("Maior número: " + numeros.exibirNumeros());
+
+
+        //  Ordenar Pessoas
+        System.out.println("\nOrdenar Pessoas");
+        OrdenacaoPessoa pessoas = new OrdenacaoPessoa();
+        pessoas.adicionarPessoas("Lua", 12, 1.78);
+        pessoas.adicionarPessoas("Sol", 18, 1.60);
+        pessoas.adicionarPessoas("Flor", 17, 1.64);
+        pessoas.adicionarPessoas("Mar", 15, 1.70);
+
+        pessoas.exibirPessoas();
+        System.out.println("\nOrdenar por altura");
+        System.out.println(pessoas.ordenarPorAltura());
+        System.out.println("\nOrdenar por idade");
+        System.out.println(pessoas.ordernarPorIdade());
     }
 }
