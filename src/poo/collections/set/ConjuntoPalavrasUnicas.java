@@ -26,4 +26,8 @@ public class ConjuntoPalavrasUnicas {
         System.out.println(palavras);
     }
 
+    public int contarPalavras() {
+        return palavras.size();
+    }
+
 }

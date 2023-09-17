@@ -4,6 +4,7 @@ import poo.collections.list.CarrinhoDeCompras;
 import poo.collections.list.ListaTarefa;
 import poo.collections.list.OrdenacaoPessoa;
 import poo.collections.list.SomaNumeros;
+import poo.collections.set.Agenda;
 import poo.collections.set.ConjuntoPalavrasUnicas;
 
 public class App {
@@ -75,5 +76,22 @@ public class App {
         conjuntoPalavras.removerPalavra("bolacha");
         conjuntoPalavras.exibirPalavrasUnicas();
         System.out.println("melância: " + conjuntoPalavras.verificarPalavra("melância"));
+        System.out.println("Total: " + conjuntoPalavras.contarPalavras());
+
+        // Agenda de contatos
+        System.out.println("\nAgenda de contatos");
+        Agenda agendaContatos = new Agenda();
+
+        // Adicionando contatos à agenda
+        agendaContatos.adicionarContato("João", "123456789");
+        agendaContatos.adicionarContato("Maria", "987654321");
+        agendaContatos.adicionarContato("Maria Fernandes","55555555");
+        agendaContatos.adicionarContato("Ana","88889999");
+        agendaContatos.adicionarContato("Fernando","77778888");
+        agendaContatos.adicionarContato("Carolina","55555555");
+
+        // Exibindo os contatos no conjunto (deve estar vazio)
+        agendaContatos.exibirContatos();
+        System.out.println("Encontar Maria: " + agendaContatos.buscar("Maria"));
     }
 }
