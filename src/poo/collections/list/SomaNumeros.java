@@ -1,8 +1,10 @@
 package poo.collections.list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class SomaNumeros {
     private List<Integer> numeros;
@@ -37,7 +39,16 @@ public class SomaNumeros {
         return menor;
     }
 
-    public List<Integer> exibirNumeros() {
-        return numeros;
+    public void ordenarAscendente() {
+        numeros.stream().sorted();
+    }
+
+    public void ordenarDescendente() {
+        Collections.sort(numeros, Collections.reverseOrder());
+    }
+    public String exibirNumeros() {
+        return numeros.stream()
+            .map(Object::toString)
+            .collect(Collectors.joining(", "));
     }
 }

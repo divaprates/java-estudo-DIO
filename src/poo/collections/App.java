@@ -4,6 +4,7 @@ import poo.collections.list.CarrinhoDeCompras;
 import poo.collections.list.ListaTarefa;
 import poo.collections.list.OrdenacaoPessoa;
 import poo.collections.list.SomaNumeros;
+import poo.collections.set.ConjuntoPalavrasUnicas;
 
 public class App {
     public static void main(String args[]) {
@@ -41,6 +42,10 @@ public class App {
         System.out.println("Maior número: " + numeros.encontrarMaiorNumero());
         System.out.println("Maior número: " + numeros.encontrarMenorNumero());
         System.out.println("Maior número: " + numeros.exibirNumeros());
+        numeros.ordenarAscendente();
+        System.out.println(numeros.exibirNumeros());
+        numeros.ordenarDescendente();
+        System.out.println(numeros.exibirNumeros());
 
 
         //  Ordenar Pessoas
@@ -56,5 +61,19 @@ public class App {
         System.out.println(pessoas.ordenarPorAltura());
         System.out.println("\nOrdenar por idade");
         System.out.println(pessoas.ordernarPorIdade());
+
+        // Set
+        // Conjunto de Palavras Únicas
+        System.out.println("\nConjunto de Palavras Únicas");
+        ConjuntoPalavrasUnicas conjuntoPalavras = new ConjuntoPalavrasUnicas();
+        conjuntoPalavras.adicionarPalavra("bolacha");
+        conjuntoPalavras.adicionarPalavra("melância");
+        conjuntoPalavras.adicionarPalavra("café");
+        conjuntoPalavras.adicionarPalavra("abacate");
+        conjuntoPalavras.adicionarPalavra("abacate");
+        conjuntoPalavras.exibirPalavrasUnicas();
+        conjuntoPalavras.removerPalavra("bolacha");
+        conjuntoPalavras.exibirPalavrasUnicas();
+        System.out.println("melância: " + conjuntoPalavras.verificarPalavra("melância"));
     }
 }

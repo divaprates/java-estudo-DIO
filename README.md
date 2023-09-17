@@ -17,8 +17,10 @@ Estudo de Java.
 - Interfaces
 - Collections
   - List
+  - Set
 
 <br>
+![Alt text](./assets/image.png)
 
 ##
 ### Tecnologias utilizadas:
