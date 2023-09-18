@@ -2,8 +2,10 @@ package poo.collections.set;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 import poo.collections.set.model.Contato;
+import poo.collections.set.util.ComparatorPorNumero;
 
 public class Agenda {
     private Set<Contato> contatos;
@@ -26,7 +28,18 @@ public class Agenda {
         System.out.println(contatos);
     }
 
-    public void adicionarContato(String nome, String numero) {
-        contatos.add(new Contato(nome, numero));
+    public void adicionarContato(String nome, String numero, Integer classi) {
+        contatos.add(new Contato(nome, numero, classi));
+    }
+
+    public Set<Contato> exibirContatosPorNome() {
+        Set<Contato> contatosPorNome = new TreeSet<>(contatos);
+        return contatosPorNome;
+    }
+
+    public Set<Contato> exibirContatosPorNumero() {
+        Set<Contato> contatosPorNumero = new TreeSet<>(new ComparatorPorNumero());
+        contatosPorNumero.addAll(contatos);
+        return contatosPorNumero;
     }
 }

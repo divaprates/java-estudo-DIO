@@ -83,15 +83,18 @@ public class App {
         Agenda agendaContatos = new Agenda();
 
         // Adicionando contatos à agenda
-        agendaContatos.adicionarContato("João", "123456789");
-        agendaContatos.adicionarContato("Maria", "987654321");
-        agendaContatos.adicionarContato("Maria Fernandes","55555555");
-        agendaContatos.adicionarContato("Ana","88889999");
-        agendaContatos.adicionarContato("Fernando","77778888");
-        agendaContatos.adicionarContato("Carolina","55555555");
+        agendaContatos.adicionarContato("João", "123456789", 8);
+        agendaContatos.adicionarContato("Maria", "987654321", 4);
+        agendaContatos.adicionarContato("Maria Fernandes","55555555", 6);
+        agendaContatos.adicionarContato("Ana","88889999", 1);
+        agendaContatos.adicionarContato("Fernando","77778888", 9);
+        agendaContatos.adicionarContato("Carolina","55555555", 5);
 
         // Exibindo os contatos no conjunto (deve estar vazio)
         agendaContatos.exibirContatos();
         System.out.println("Encontar Maria: " + agendaContatos.buscar("Maria"));
+
+        System.out.println("Ordenados por nome: \n" + agendaContatos.exibirContatosPorNome());
+        System.out.println("Ordenados por numero: \n" + agendaContatos.exibirContatosPorNumero());
     }
 }
