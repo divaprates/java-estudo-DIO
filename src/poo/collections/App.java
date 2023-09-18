@@ -110,5 +110,9 @@ public class App {
         dicionario.removerPalavra("java");
         dicionario.exibirPalavras();
 
+        dicionario.adicionarPalavra("python", "Linguagem de programação de alto nível conhecida por sua simplicidade e legibilidade.");
+        dicionario.adicionarPalavra("ruby", "Linguagem de programação interpretada e de script, conhecida por sua simplicidade e produtividade.");
+        System.out.println("O dicionário possui " + dicionario.exibirContagemPalavras() + " palavras!");
+
     }
 }

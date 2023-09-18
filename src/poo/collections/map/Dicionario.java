@@ -43,4 +43,8 @@ public class Dicionario {
 
         return definicao;
     }
+
+    public int exibirContagemPalavras() {
+        return lista.size();
+    }
 }
