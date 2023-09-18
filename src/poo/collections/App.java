@@ -4,6 +4,7 @@ import poo.collections.list.CarrinhoDeCompras;
 import poo.collections.list.ListaTarefa;
 import poo.collections.list.OrdenacaoPessoa;
 import poo.collections.list.SomaNumeros;
+import poo.collections.map.Dicionario;
 import poo.collections.set.Agenda;
 import poo.collections.set.ConjuntoPalavrasUnicas;
 
@@ -96,5 +97,18 @@ public class App {
 
         System.out.println("Ordenados por nome: \n" + agendaContatos.exibirContatosPorNome());
         System.out.println("Ordenados por numero: \n" + agendaContatos.exibirContatosPorNumero());
+
+        // Map - Dicionário
+        System.out.println("\nMap - Dicionário");
+        Dicionario dicionario = new Dicionario();
+        dicionario.adicionarPalavra("java", "Linguagem de programação orientada a objetos.");
+        dicionario.adicionarPalavra("typescript", "Superset da linguagem JavaScript que adiciona tipagem estática.");
+        dicionario.adicionarPalavra("kotlin", "Linguagem moderna de programação para a JVM.");
+        dicionario.exibirPalavras();
+
+        System.out.println("Java: " + dicionario.pesquisarPorPalavra("java"));
+        dicionario.removerPalavra("java");
+        dicionario.exibirPalavras();
+
     }
 }

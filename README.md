@@ -18,6 +18,7 @@ Estudo de Java.
 - Collections
   - List
   - Set
+  - Map
 
 <br>
 ![Alt text](./assets/image.png)
