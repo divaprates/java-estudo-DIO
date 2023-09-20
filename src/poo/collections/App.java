@@ -5,6 +5,7 @@ import poo.collections.list.ListaTarefa;
 import poo.collections.list.OrdenacaoPessoa;
 import poo.collections.list.SomaNumeros;
 import poo.collections.map.Dicionario;
+import poo.collections.map.Livraria;
 import poo.collections.set.Agenda;
 import poo.collections.set.ConjuntoPalavrasUnicas;
 
@@ -114,5 +115,16 @@ public class App {
         dicionario.adicionarPalavra("ruby", "Linguagem de programação interpretada e de script, conhecida por sua simplicidade e produtividade.");
         System.out.println("O dicionário possui " + dicionario.exibirContagemPalavras() + " palavras!");
 
+        // Map - ordenação
+        // Livraria
+        System.out.println("\nLivraria");
+        Livraria livraria = new Livraria();
+        livraria.adicionarLivro("1", "O Senhor dos Anéis", "J.R.R. Tolkien", 12.54);
+        livraria.adicionarLivro("2", "Harry Potter e a Pedra Filosofal", "J.K. Rowling", 9.65);
+        livraria.adicionarLivro("3", "Cem Anos de Solidão", "Gabriel García Márquez", 35.89);
+        livraria.adicionarLivro("4", "1984", "George Orwell", 65.89);
+        livraria.adicionarLivro("5", "Dom Quixote", "Miguel de Cervantes", 31.87);
+
+        livraria.exibirLivors();
     }
 }
