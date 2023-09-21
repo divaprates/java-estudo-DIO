@@ -119,12 +119,30 @@ public class App {
         // Livraria
         System.out.println("\nLivraria");
         Livraria livraria = new Livraria();
-        livraria.adicionarLivro("1", "O Senhor dos Anéis", "J.R.R. Tolkien", 12.54);
-        livraria.adicionarLivro("2", "Harry Potter e a Pedra Filosofal", "J.K. Rowling", 9.65);
-        livraria.adicionarLivro("3", "Cem Anos de Solidão", "Gabriel García Márquez", 35.89);
-        livraria.adicionarLivro("4", "1984", "George Orwell", 65.89);
-        livraria.adicionarLivro("5", "Dom Quixote", "Miguel de Cervantes", 31.87);
+        livraria.adicionarLivro("1", "O Senhor dos Anéis", "J.R.R. Tolkien", 12.54d);
+        livraria.adicionarLivro("2", "Harry Potter e a Pedra Filosofal", "J.K. Rowling", 9.65d);
+        livraria.adicionarLivro("3", "Cem Anos de Solidão", "Gabriel García Márquez", 35.89d);
+        livraria.adicionarLivro("4", "1984", "George Orwell", 65.89d);
+        livraria.adicionarLivro("5", "Dom Quixote", "Miguel de Cervantes", 31.87d);
+        livraria.adicionarLivro("6", "Animais Fantásticos", "J.K. Rowling", 15.65d);
+        
+        livraria.exibirLivors();
+        livraria.removerLivro("1984");
 
         livraria.exibirLivors();
+
+        System.out.println("\nOrdenados por preço: ");
+        System.out.println(livraria.exibirLivrosOrdenadosPorPreco());
+        System.out.println("\nOrdenados por autor: ");
+        System.out.println(livraria.exibirLivrosOrdenadosPorAutor());
+        
+        System.out.println("\nLivros de J.K. Rowling");
+        System.out.println(livraria.pesquisarLivrosPorAutor("J.K. Rowling"));
+
+        System.out.println("\nLivro mais barato: ");
+        System.out.println(livraria.obterLivroMaisBarato());
+
+        System.out.println("\nLivro mais caro: ");
+        System.out.println(livraria.obterLivroMaisCaro());
     }
 }
