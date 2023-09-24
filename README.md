@@ -19,6 +19,8 @@ Estudo de Java.
   - List
   - Set
   - Map
+- Streams
+  - Consumer
 
 <br>
 ![Alt text](./assets/image.png)
