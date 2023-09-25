@@ -21,6 +21,7 @@ Estudo de Java.
   - Map
 - Streams
   - Consumer
+  - Supplier
 
 <br>
 ![Alt text](./assets/image.png)
