@@ -22,6 +22,7 @@ Estudo de Java.
 - Streams
   - Consumer
   - Supplier
+  - Function
 
 <br>
 ![Alt text](./assets/image.png)
