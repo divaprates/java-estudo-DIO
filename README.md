@@ -23,6 +23,7 @@ Estudo de Java.
   - Consumer
   - Supplier
   - Function
+  - Predicate
 
 <br>
 ![Alt text](./assets/image.png)
