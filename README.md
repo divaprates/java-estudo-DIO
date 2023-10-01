@@ -3,28 +3,31 @@
 - Estudo
 ##
 
-| Java | Estudos |
-|--|--|
-| Módulo | Dominando a linguagem de programação Java |
-| Bootcamp | Santander Bootcamp 2023 - Fullstack Java+Angular |
-| Plataforma | DIO |
+| Estudos    | Java                                             |
+|------------|--------------------------------------------------|
+| Módulo     | Dominando a linguagem de programação Java        |
+| Módulo     | Ganhando Produtividade com Stream API            |
+| Bootcamp   | Santander Bootcamp 2023 - Fullstack Java+Angular |
+| Plataforma | DIO                                              |
 
 <br>
 Estudo de Java.
 
-- Abstract
-- Generics
-- Interfaces
-- Collections
-  - List
-  - Set
-  - Map
-- Streams
-  - Consumer
-  - Supplier
-  - Function
-  - Predicate
-  - Binary Operator
+- poo
+  - Abstract
+  - Generics
+  - Interfaces
+- Listas
+  - Collections
+    - List
+    - Set
+    - Map
+  - Streams
+    - Consumer
+    - Supplier
+    - Function
+    - Predicate
+    - Binary Operator
 
 <br>
 ![Alt text](./assets/image.png)
