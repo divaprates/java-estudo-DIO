@@ -24,6 +24,7 @@ Estudo de Java.
   - Supplier
   - Function
   - Predicate
+  - Binary Operator
 
 <br>
 ![Alt text](./assets/image.png)
