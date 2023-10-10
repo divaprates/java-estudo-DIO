@@ -1,4 +1,4 @@
-package poo.abstrato;
+package poo.abstracts;
 
 public class MSN extends Mensagem {
 

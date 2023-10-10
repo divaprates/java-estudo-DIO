@@ -1,4 +1,4 @@
-package poo.abstrato;
+package poo.abstracts;
 
 public abstract class Mensagem {
     public abstract void enviarMensagem();
